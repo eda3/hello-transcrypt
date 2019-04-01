@@ -1,0 +1,24 @@
+{
+    "name": "hello-transcrypt",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --mode production",
+        "start": "webpack-dev-server --mode development --watch --inline"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^11.11.4",
+        "copy-webpack-plugin": "^5.0.1",
+        "html-webpack-plugin": "^3.2.0",
+        "transcrypt": "^3.6.82",
+        "transcrypt-loader": "^1.0.2",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0",
+        "webpack-dev-server": "^3.2.1",
+        "webpack-merge": "^4.2.1"
+    }
+}
