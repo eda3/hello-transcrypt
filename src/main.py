@@ -81,28 +81,27 @@ def create():
 
 
 def update():
-    
     if (gameOver):
         return
-    
+
     if cursors.left.isDown:
         player.setVelocityX(-160)
         player.anims.play('left', True)
-    
+
     elif cursors.right.isDown:
         player.setVelocityX(160)
         player.anims.play('right', True)
-    
+
     else:
         player.setVelocityX(0)
         player.anims.play('turn')
-    
+
     if cursors.up.isDown and player.body.touching.down:
         player.setVelocityY(-330)
 
 
 def collectStar(player, star):
-    
+
     star.disableBody(True, True)
 
     #  Add and update the score
@@ -152,7 +151,7 @@ config = {
     }
 }
 
-# 
+#
 player = None
 stars = None
 bombs = None
